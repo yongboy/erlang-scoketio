@@ -9,7 +9,7 @@ Another eralng socket.io server
 
     Checkout url: https://erlang-scoketio.googlecode.com/svn/socket.io_cowboy
 
-    Now Compatible with socket.io-spec(https://github.com/LearnBoost/socket.io-spec) 1.0
+    Now Compatible with socket.io-spec(https://github.com/LearnBoost/socket.io-spec) 0.9
 
     Support xhr-polling/jsonp-polling/htmlfile/websocket/flashsocket transports
 
@@ -53,6 +53,7 @@ If you want java version socket.io server, here is the project: http://code.goog
 Enjoy it~
 
 Erlang 版本的socket.io服务器实现
+
 1. 基于cowboy构建
 
     检出地址： https://erlang-scoketio.googlecode.com/svn/socket.io_cowboy
