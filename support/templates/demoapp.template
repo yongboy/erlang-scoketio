@@ -1,0 +1,31 @@
+%% -*- erlang -*-
+{variables, [{appid, "demoapp"},
+             {author, "yongboy@gmail.com"},
+			 {port, "8080"},
+             {year, "2012"},
+             {version, "0.1"},
+             {dest, "{{appid}}"}]}.
+{dir, "{{dest}}"}.
+
+{template, "demoapp_skel/src/demoapp.app.src", "{{dest}}/src/{{appid}}.app.src"}.
+{template, "demoapp_skel/src/mochiapp.erl", "{{dest}}/src/{{appid}}.erl"}.
+{template, "demoapp_skel/src/demoapp_impl.erl", "{{dest}}/src/{{appid}}_impl.erl"}.
+
+{template, "demoapp_skel/start.sh", "{{dest}}/start.sh"}.
+
+{file, "demoapp_skel/priv/static/flashsocket/WebSocketMain.swf", "{{dest}}/priv/static/flashsocket/WebSocketMain.swf"}.
+{file, "demoapp_skel/priv/static/flashsocket/WebSocketMainInsecure.swf", "{{dest}}/priv/static/flashsocket/WebSocketMainInsecure.swf"}.
+{file, "demoapp_skel/priv/static/socket.io.js", "{{dest}}/priv/static/socket.io.js"}.
+
+{file, "demoapp_skel/priv/www/index.html", "{{dest}}/priv/www/index.html"}.
+{file, "demoapp_skel/priv/www/favicon.ico", "{{dest}}/priv/www/favicon.ico"}.
+{file, "demoapp_skel/priv/www/css/chat.css", "{{dest}}/priv/www/css/chat.css"}.
+{file, "demoapp_skel/priv/www/js/jquery-1.6.2.js", "{{dest}}/priv/www/js/jquery-1.6.2.js"}.
+
+{file, "../../Makefile", "{{dest}}/Makefile"}.
+{file, "demoapp_skel/rebar.config", "{{dest}}/rebar.config"}.
+{file, "demoapp_skel/app.config", "{{dest}}/app.config"}.
+{file, "../../rebar", "{{dest}}/rebar"}.
+
+{chmod, 8#755, "{{dest}}/rebar"}.
+{chmod, 8#755, "{{dest}}/start.sh"}.

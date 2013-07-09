@@ -1,0 +1,7 @@
+backend_version=R15B
+eclipse.preferences.version=1
+external_includes=
+external_modules=
+nukeOutputOnClean=false
+output_dir=ebin
+source_dirs=deps/lager/src;test;deps/cowboy/src;src

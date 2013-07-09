@@ -1,0 +1,26 @@
+%% Feel free to use, reuse and abuse the code in this file.
+
+{application, socketio, [
+	{description, "socket.io server"},
+	{vsn, "0.1.0"},
+	{modules, []},
+	{registered, [socketio_sup]},
+	{applications, [
+		kernel,
+		stdlib,
+		crypto,
+		public_key,
+		ssl,
+		cowboy
+	]},
+	{mod, {socketio, []}},
+	{env, [
+		{server_port, 8080},
+		{netpool_acceptors, 1000},
+		{heartbeat_interval, 20},
+    	{heartbeat_timeout, 60},
+        {close_timeout, 60},
+        {allow_transports, "websocket,flashsocket,htmlfile,xhr-polling,jsonp-polling"},
+        {flash_policy_port, 10843}
+    ]}
+]}.
