@@ -4,6 +4,7 @@ erlang-scoketio
 The mirroring of https://code.google.com/p/erlang-scoketio/
 
 Another eralng socket.io server
+
 1. socket.io server base on cowboy
 
     Checkout url: https://erlang-scoketio.googlecode.com/svn/socket.io_cowboy
@@ -31,12 +32,18 @@ Another eralng socket.io server
 4. how to start your new project
 
     a. download the source, or svn checkout
+    
     b.#chmod a+x
+    
     c.#make app PROJECT=your project name PREFIX=you path here
     (eg: #make app PROJECT=chatdemo PREFIX=/home/yongboy/)
+    
     d.entry your custom path, then #make
+    
     e.#sh start.sh
+    
     f. view http://yourip:8080/index.html
+    
     enjoy it~
 
     Then download it step by step. 
@@ -75,7 +82,9 @@ Erlang 版本的socket.io服务器实现
 4. 如何开始
 
     a. 想法检出源代码
+    
     b.linux下执行 #chmod a+x 赋予执行权限
+    
     c.#make app PROJECT=工程名 PREFIX=保存路径
     (eg: #make app PROJECT=chatdemo PREFIX=/home/yongboy/)
 
